@@ -1,6 +1,31 @@
-<div class="inpo">
+<div>
+  <div class="inpo">
     <input type="search" name="" id="" placeholder="..." class="input" />
     <button type="search" class="search">Rechercher</button>
-  </div> 
-<p class="page">Page d'accueil principale</p>
+  </div>
+  <h1 class="font-bold text-4xl text-center">Page d'accueil</h1>
 
+  <div class="princo" *ngFor="let album of albums; let i = index">
+    <span>{{ album.id }}</span>
+    <h3 class="ref">{{ album.ref }}</h3>
+<p> <em> {{ album.name }} </em></p>
+        
+    <h2>
+      <a routerLink="/album/{{ album.id }}" class="hover:underline">{{
+        album.title
+      }}</a>
+    </h2>
+    <p>{{ album.description }}</p>
+
+    <div class="nav">
+      
+        <!-- <li>{{ album.url }}</li> -->
+        <span>{{ album.like }}</span>
+       <span>{{ album.tags }}</span>
+        <span>{{ album.status }}</span>
+
+        <button>en</button><br>
+        <button>Details</button>
+    </div>
+  </div>
+</div>

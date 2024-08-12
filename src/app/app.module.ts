@@ -7,6 +7,7 @@ import { FormInscriptionComponent } from './form-inscription/form-inscription.co
 // import { ActivatedRoute } from '@angular/router';
 import { InputPrinComponent } from './input-prin/input-prin.component';
 import { AccueilComponent } from './accueil/accueil.component';
+import { AsideComponent } from './aside/aside.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { AccueilComponent } from './accueil/accueil.component';
     FormComponent,
     FormInscriptionComponent,
     InputPrinComponent,
-    AccueilComponent
+    AccueilComponent,
+    AsideComponent
   ],
   imports: [
     BrowserModule,

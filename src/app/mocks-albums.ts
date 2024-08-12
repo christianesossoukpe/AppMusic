@@ -1,4 +1,4 @@
-import { Album, List } from ;
+import { Album, List } from './album';
 
 export const ALBUMS: Album[] = [
   {
