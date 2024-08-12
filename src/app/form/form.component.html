@@ -1,0 +1,57 @@
+<div>
+  <h2>Page de connexion</h2>
+  <form
+    class="mt-10 max-w-[500px] mx-auto bg-white px-4 py-8 rounded-md shadow-md"
+  >
+    <p class="bg-red-100 text-red-700 px-4 py-2"></p>
+
+    <div class="my-4">
+      <label for="email">Email</label> <br />
+      <input
+        class="block p-2 bg-slate-100 rounded-sm w-full placeholder:font-mono placeholder:font-bold"
+        type="text"
+        id="email"
+        name="email"
+        aria-describedby="emailHelp"
+        placeholder="Entrez votre email"
+        ngModel
+        email
+        required
+      />
+      <br />
+      <!-- <small id="emailHelp">We'll never share your email with anyone else.</small> -->
+    </div>
+    <div class="my-4">
+      <label for="pwd">Mot de passe</label> <br />
+      <input
+        class="block p-2 bg-slate-100 rounded-sm w-full placeholder:font-mono placeholder:font-bold"
+        type="password"
+        id="pwd"
+        placeholder="mot de passe"
+        name="password"
+        ngModel
+        required
+      />
+      <br />
+    </div>
+
+    <div class="my-4 flex">
+     
+      <label for="checkout">Restez connecté</label><br />
+      <input
+      type="checkbox"
+      id="checkout"
+      class="mr-4 w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800"
+      name="logged"
+      ngModel
+    /> <br>
+    </div>
+
+    <button
+      type="submit"
+      class="Soumettre"
+    >
+      Soumettre
+    </button>
+  </form>
+</div>

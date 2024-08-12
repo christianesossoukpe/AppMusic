@@ -1,0 +1,28 @@
+<div>
+<h2>Formulaire d'inscription</h2>
+    <form class="mt-10 max-w-[500px] mx-auto bg-white px-4 py-8 rounded-md shadow-md" >
+        <p  class="bg-red-100 text-red-700 px-4 py-2"></p>
+        
+        <div class="my-4">
+            <label for="nom">Nom</label><br>
+            <input class="block p-2 bg-slate-100 rounded-sm w-full placeholder:font-mono placeholder:font-bold" type="text"
+                id="nom" name="nom" aria-describedby="emailHelp" placeholder="Entrez votre nom" ngModel name required> <br>
+            <!-- <small id="emailHelp">We'll never share your email with anyone else.</small> -->
+        </div>
+        <div class="my-4">
+            <label for="email">Email</label><br>
+            <input class="block p-2 bg-slate-100 rounded-sm w-full placeholder:font-mono placeholder:font-bold" type="text"
+                id="email" name="email" aria-describedby="emailHelp" placeholder="Entrez votre email" ngModel email required> <br>
+            <!-- <small id="emailHelp">We'll never share your email with anyone else.</small> -->
+        </div>
+        <div class="my-4">
+            <label for="pwd">Mot de passe</label> <br>
+            <input class="block p-2 bg-slate-100 rounded-sm w-full placeholder:font-mono placeholder:font-bold"
+                type="password" id="pwd" placeholder="mot de passe" name="password" ngModel required> <br>
+        </div>
+
+
+        <button  type="submit"
+            class="Envoyer">Envoyer</button>
+    </form>
+</div>
