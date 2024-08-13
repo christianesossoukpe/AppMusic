@@ -9,10 +9,16 @@ import {Album} from '../album'
 })
 export class AccueilComponent {
 albums?:Album[];
+album?:Album;
   constructor(private service:AffichageService){}
 
  ngOnInit():void{
 
   this.albums = this.service.affichAlbum()
+ }
+
+ getDetail(album:Album){
+this.album = album;
+
  }
 }

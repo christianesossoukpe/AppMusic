@@ -6,6 +6,23 @@
     border: 1px solid wheat ;
 }
  */
+ .navPrin{
+    margin: 0 auto;
+    width: 80%; 
+    background-color:rgb(12, 12, 216);
+    height: 60px;
+    font-size: 30px;
+    list-style-type:none;
+
+  }
+ .ul{
+    display: flex;
+    color: white;
+    gap: 50px;
+    justify-items: center;
+    margin-right: 10%;
+    /* "flex flex-1 gap-2 items-center" */
+ }
 
 
 

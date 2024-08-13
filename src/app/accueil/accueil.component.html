@@ -1,31 +1,31 @@
+<app-aside [asideEmit]="album"></app-aside>
 <div>
   <div class="inpo">
-    <input type="search" name="" id="" placeholder="..." class="input" />
-    <button type="search" class="search">Rechercher</button>
+    <input type="search" name="" id="" placeholder="..." class="input"/>
+        <button type="search" class="search">Rechercher</button>
   </div>
-  <h1 class="font-bold text-4xl text-center">Page d'accueil</h1>
+  <h1 class="font-bold text-4xl text-center">Page principale Album Musique</h1>
 
   <div class="princo" *ngFor="let album of albums; let i = index">
     <span>{{ album.id }}</span>
     <h3 class="ref">{{ album.ref }}</h3>
-<p> <em> {{ album.name }} </em></p>
-        
+    <p>
+      <em> {{ album.name }} </em>
+    </p>
+
     <h2>
-      <a routerLink="/album/{{ album.id }}" class="hover:underline">{{
-        album.title
-      }}</a>
+      <p> {{ album.title }}</p>
+      <!-- /album/ -->
     </h2>
     <p>{{ album.description }}</p>
 
     <div class="nav">
-      
-        <!-- <li>{{ album.url }}</li> -->
-        <span>{{ album.like }}</span>
-       <span>{{ album.tags }}</span>
-        <span>{{ album.status }}</span>
+      <span>{{ album.like }}</span>
+      <span id="span">{{ album.tags }}</span>
+      <span>{{ album.status }}</span>
 
-        <button>en</button><br>
-        <button>Details</button>
+      <button>en</button><br />
+      <button class="details" (click)="getDetail(album)">Details</button>
     </div>
   </div>
 </div>

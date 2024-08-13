@@ -1,1 +1,5 @@
-<p>aside works!</p>
+<div *ngIf="asideEmit  && songs">
+<p>{{asideEmit.title}}</p>
+<img src="{{asideEmit.url}}" alt="">
+<p *ngFor="let song of songs.list">{{song}}</p>
+</div>
