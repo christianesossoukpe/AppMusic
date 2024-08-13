@@ -1,5 +1,28 @@
-<div *ngIf="asideEmit  && songs">
-<p>{{asideEmit.title}}</p>
-<img src="{{asideEmit.url}}" alt="">
-<p *ngFor="let song of songs.list">{{song}}</p>
+<div class="container">
+    <div *ngIf="asideEmit  && songs" class="detail-container">
+        <!-- <h2>Titre des chants</h2> -->
+    <div class="image-container">
+        <img class="img" src="{{asideEmit.url}}" alt="">
+    </div>
+    
+    <h5>{{asideEmit.title}}</h5>
+
+    <p class="name">Name:{{asideEmit.name}}</p>
+
+    <button (click)="declencheur()">Play🎶</button>
+
+    <div class="grdDiv">
+        <div [style.width.%]="play" class="pfre">
+
+        </div>
+    </div>
+    <h4>List of songs</h4>
+    <em><p *ngFor="let song of songs.list">{{song}}</p></em>
+    <!-- <span>{{album.duration}}</span> -->
+    
+    </div>
+    <div>
+        <!-- <span>Status:{{ asideEmit.status }}</span> -->
+    </div>
 </div>
+

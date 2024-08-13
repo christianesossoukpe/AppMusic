@@ -1,31 +1,42 @@
-<app-aside [asideEmit]="album"></app-aside>
-<div>
-  <div class="inpo">
-    <input type="search" name="" id="" placeholder="..." class="input"/>
-        <button type="search" class="search">Rechercher</button>
-  </div>
-  <h1 class="font-bold text-4xl text-center">Page principale Album Musique</h1>
+<div class="container">
+ <div class="detail-container">
+  <app-aside [asideEmit]="album" style="width: 30%"></app-aside>
+ </div>
+  <div style="width: 65%">
+    <div class="inpo">
+      <input type="search" name="" id="" placeholder="..." class="input" />
+      <button type="search" class="search">Rechercher</button>
+    </div>
+    <h1 class="font-bold text-4xl text-center">
+      Page principale Album Musique
+    </h1>
 
-  <div class="princo" *ngFor="let album of albums; let i = index">
-    <span>{{ album.id }}</span>
-    <h3 class="ref">{{ album.ref }}</h3>
-    <p>
+    <div class="princo" *ngFor="let album of albums; let i = index">
+      <!-- <span>{{ album.id }}</span> -->
+      <h6 class="ref">{{ album.ref }}</h6>
+      <!-- <p>
       <em> {{ album.name }} </em>
-    </p>
+    </p> -->
 
-    <h2>
-      <p> {{ album.title }}</p>
-      <!-- /album/ -->
-    </h2>
-    <p>{{ album.description }}</p>
+      <h4>
+        <strong
+          ><p>{{ album.title }}</p></strong
+        >
+        <!-- /album/ -->
+      </h4>
+      <p>{{ album.description }}</p>
 
-    <div class="nav">
-      <span>{{ album.like }}</span>
-      <span id="span">{{ album.tags }}</span>
-      <span>{{ album.status }}</span>
-
-      <button>en</button><br />
-      <button class="details" (click)="getDetail(album)">Details</button>
+      <div class="nav">
+        <span>Like:{{ album.like }}</span> <br />
+        <span *ngFor="let tag of album.tags">
+          <button class="tag">{{ tag }}</button></span
+        >
+      </div>
+      <div class="en">
+        <button>en</button>
+        <span>2000</span>
+        <button class="details" (click)="getDetail(album)">Details</button>
+      </div>
     </div>
   </div>
 </div>

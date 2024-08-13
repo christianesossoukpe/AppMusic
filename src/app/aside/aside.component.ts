@@ -10,6 +10,8 @@ import { ALBUM_LISTS } from '../mocks-albums';
 export class AsideComponent {
   @Input() asideEmit?: Album;
   songs?: List;
+  play:number = 0;
+  stock:any;
   ngOnChanges() {
     this.songs = ALBUM_LISTS.filter((a) => {
       return a.id == this.asideEmit?.id;
@@ -18,4 +20,19 @@ export class AsideComponent {
     console.log(this.asideEmit);
     
   }
+
+  declencheur(){
+    this.stock = setInterval(()=>{
+if (this.play<100){
+  this.play++
+}
+else{
+  clearInterval( this.stock)
+}
+
+},1000)
+console.log(this.play);
+
+}
+  
 }

@@ -1,0 +1,33 @@
+h4 {
+  background-color: blue;
+  color: white;
+}
+.detail-container {
+  width: 250px;
+  border: 1px solid aquamarine;
+  padding: 5px;
+}
+.img {
+  width: 100%;
+  height: 200px;
+}
+.image-container {
+}
+.name{
+    flex-wrap: wrap;
+    font-weight: bold;
+}
+.pfre{
+  background-color: rgb(30, 20, 219);
+}
+.grdDiv{
+border: 2px solid rgb(143, 209, 245);
+height: 30px;
+border-radius: 10px;
+  /* background-color: rgb(212, 66, 66); */
+
+}
+button{
+  background-color: rgb(131, 194, 249);
+  color: white;
+}
