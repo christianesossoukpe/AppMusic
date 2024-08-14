@@ -9,6 +9,7 @@ import { InputPrinComponent } from './input-prin/input-prin.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { AsideComponent } from './aside/aside.component';
 import { FormsModule } from '@angular/forms';
+import { PaginateComponent } from './paginate/paginate.component';
 
 
 
@@ -20,6 +21,7 @@ import { FormsModule } from '@angular/forms';
     InputPrinComponent,
     AccueilComponent,
     AsideComponent,
+    PaginateComponent,
   ],
   imports: [
     BrowserModule,

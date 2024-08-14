@@ -3,9 +3,10 @@ h4 {
   color: white;
 }
 .detail-container {
-  width: 250px;
-  border: 1px solid aquamarine;
+  width: 260px;
+  border: 5px solid white;
   padding: 5px;
+  box-shadow: 2px;
 }
 .img {
   width: 100%;
@@ -21,7 +22,7 @@ h4 {
   background-color: rgb(30, 20, 219);
 }
 .grdDiv{
-border: 2px solid rgb(143, 209, 245);
+border: 2px solid rgb(249, 245, 194);
 height: 30px;
 border-radius: 10px;
   /* background-color: rgb(212, 66, 66); */
