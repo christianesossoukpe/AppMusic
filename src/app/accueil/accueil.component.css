@@ -51,5 +51,9 @@ h1 {
 .btn{
 background-color: #fff;
 }
+.image{
+border-radius: 700px;
+width: 90px;
+}
 
 
