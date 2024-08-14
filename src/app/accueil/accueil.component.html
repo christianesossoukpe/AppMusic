@@ -6,6 +6,10 @@
     <div class="inpo">
      
       <app-input-prin (searchEvent)="getSearch($event)"></app-input-prin>
+     <div>
+  <app-paginate></app-paginate>
+</div> 
+    
     </div>
     <h1 class="font-bold text-4xl text-center">
       Page principale Album Musique
@@ -13,31 +17,29 @@
     
 
     <div class="princo" *ngFor="let album of albums; let i = index">
-      <!-- <span>{{ album.id }}</span> -->
       <h6 class="ref">{{ album.ref }}</h6> 
-      <!-- <p>
-      <em> {{ album.name }} </em>
-    </p> -->
+    
 
       <h4>
         <strong
           ><p>{{ album.title }}</p></strong
         >
-        <!-- /album/ -->
       </h4>
       <p>{{ album.description }}</p>
 
       <div class="nav">
-        <span>Like:{{ album.like }}</span> <br />
+        <span>{{ album.like }}</span> <br/>
         <span *ngFor="let tag of album.tags">
           <button class="tag">{{ tag }}</button></span
         >
       </div>
       <div class="en">
-        <button>en</button>
-        <span>2000</span>
+        <button class="btnen" >En</button>
+        <span>🖤20</span>
+        <span>🕕820 min</span>
         <button class="details" (click)="getDetail(album)">Details</button>
       </div>
     </div>
   </div>
+  
 </div>

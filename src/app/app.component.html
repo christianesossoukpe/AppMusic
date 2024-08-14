@@ -21,7 +21,7 @@
           <a class="nav-link" routerLink="app-form">Se connecter</a>
         </li>
 
-        <span *ngIf="count">{{ count }}</span>
+        <span  class="timer"  *ngIf="count">{{ count }}</span>
 
         <!-- <li class="nav-item">
           <a class="nav-link" routerLink="app-form-inscription"
@@ -38,6 +38,4 @@
 
 <router-outlet></router-outlet>
 
-<div>
-  <app-paginate></app-paginate>
-</div>
+

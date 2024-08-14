@@ -14,15 +14,15 @@ h4 {
 }
 .image-container {
 }
-.name{
+/* .name{
     flex-wrap: wrap;
     font-weight: bold;
-}
+} */
 .pfre{
   background-color: rgb(30, 20, 219);
 }
 .grdDiv{
-border: 2px solid rgb(249, 245, 194);
+border: 2px solid rgb(249, 238, 88);
 height: 30px;
 border-radius: 10px;
   /* background-color: rgb(212, 66, 66); */
