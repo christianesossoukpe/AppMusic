@@ -4,16 +4,17 @@
  </div>
   <div style="width: 65%">
     <div class="inpo">
-      <input type="search" name="" id="" placeholder="..." class="input" />
-      <button type="search" class="search">Rechercher</button>
+     
+      <app-input-prin (searchEvent)="getSearch($event)"></app-input-prin>
     </div>
     <h1 class="font-bold text-4xl text-center">
       Page principale Album Musique
     </h1>
+    
 
     <div class="princo" *ngFor="let album of albums; let i = index">
       <!-- <span>{{ album.id }}</span> -->
-      <h6 class="ref">{{ album.ref }}</h6>
+      <h6 class="ref">{{ album.ref }}</h6> 
       <!-- <p>
       <em> {{ album.name }} </em>
     </p> -->

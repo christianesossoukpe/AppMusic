@@ -21,4 +21,16 @@ album?:Album;
 this.album = album;
 
  }
+ getSearch(e:string){
+  
+  if(e.trim()!==""){
+    this.albums=this.albums?.filter((el)=>{
+      return el.title.toLowerCase().includes(e.toLowerCase())
+        })
+  }
+  else{
+    this.albums = this.service.affichAlbum()
+  }
+ }
+ 
 }

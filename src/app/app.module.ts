@@ -8,6 +8,8 @@ import { FormInscriptionComponent } from './form-inscription/form-inscription.co
 import { InputPrinComponent } from './input-prin/input-prin.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { AsideComponent } from './aside/aside.component';
+import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -17,11 +19,13 @@ import { AsideComponent } from './aside/aside.component';
     FormInscriptionComponent,
     InputPrinComponent,
     AccueilComponent,
-    AsideComponent
+    AsideComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,5 @@
 <div>
-    <input type="search" name="" id="" placeholder="..." class="input" />
+    <input [(ngModel)]="searche" type="search" name="" id="" placeholder="..." class="input" (keydown)="sendTest()"/>
+    {{searche}}
     <button type="search" class="search">Rechercher</button>
   </div> 
